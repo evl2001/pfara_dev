@@ -1,0 +1,1037 @@
+TPFARA
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Info.plist /Users/CJ/Documents/dev/PFARA-DEV/Info.plist
+cCopyStringsFile /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib
+cProcessPCH /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bgnxlodwmnrqyfddfxbgphkhjfcd/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bhhjtnlqmxushxduykchjlhgedzk/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARAFilter.o /Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/ROIPoint.o /Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARAFilter.o /Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/ROIPoint.o /Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA normal x86_64
+cLd /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA normal i386
+cCreateUniversalBinary /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA normal x86_64\ i386
+cTouch /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000530295C100000000000000AA
+t1392678337
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c000000005362EFC1000000000000044C
+t1398992833
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005362EFC100000000000001DE
+t1398992833
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+c000000005362EFC10000000000268434
+t1398992833
+s2524212
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c000000005362EFC10000000000007D5C
+t1398992833
+s32092
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+c000000005362EFC10000000000020D64
+t1398992833
+s134500
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+c000000005362EFC1000000000001B3B8
+t1398992833
+s111544
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+c000000005362EFC10000000000034FAC
+t1398992833
+s217004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+c000000005362EFC1000000000000CB08
+t1398992833
+s51976
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+c000000005362EFC1000000000002C5F4
+t1398992833
+s181748
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+c000000005362EFC1000000000002B9A8
+t1398992833
+s178600
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+c000000005362EFC10000000000011EF8
+t1398992833
+s73464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000005362EFC100000000000598A8
+t1398992833
+s366760
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000005362EFC1000000000000253C
+t1398992833
+s9532
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000005362EFC1000000000004C7C4
+t1398992833
+s313284
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c000000005362EFC10000000000085C70
+t1398992833
+s547952
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000005362EFC1000000000008B334
+t1398992833
+s570164
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+c000000005362EFC1000000000000979C
+t1398992833
+s38812
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+c000000005362EFC100000000000223B4
+t1398992833
+s140212
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+c000000005362EFC10000000000071CA8
+t1398992833
+s466088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+c000000005362EFC10000000000017E1C
+t1398992833
+s97820
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+c000000005362EFC1000000000004F090
+t1398992833
+s323728
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+c000000005362EFC1000000000003AA48
+t1398992833
+s240200
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+c000000005362EFC100000000000383CC
+t1398992833
+s230348
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+c000000005362EFC1000000000001B66C
+t1398992833
+s112236
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+c000000005362EFC10000000000030448
+t1398992833
+s197704
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000005362EFC200000000000C9E38
+t1398992834
+s826936
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+c000000005362EFC200000000000394B0
+t1398992834
+s234672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/bundle1.o
+c000000005362EFC60000000000002274
+t1398992838
+s8820
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+c000000005362EFC6000000000000681C
+t1398992838
+s26652
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libgcc_s.10.5.dylib
+c000000005362EFC60000000000007908
+t1398992838
+s30984
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+c000000005362EFC60000000000014EF8
+t1398992838
+s85752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+c000000005362EFC60000000000004734
+t1398992838
+s18228
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+c000000005362EFC6000000000000FC6C
+t1398992838
+s64620
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+c000000005362EFC6000000000000F6A0
+t1398992838
+s63136
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+c000000005362EFC60000000000006254
+t1398992838
+s25172
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+c000000005362EFC6000000000000E0F8
+t1398992838
+s57592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+c000000005362EFC6000000000000D6DC
+t1398992838
+s55004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+c000000005362EFC60000000000006308
+t1398992838
+s25352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+c000000005362EFC60000000000004050
+t1398992838
+s16464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+c000000005362EFC60000000000008570
+t1398992838
+s34160
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+c000000005362EFC60000000000005EA0
+t1398992838
+s24224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+c000000005362EFC60000000000005FAC
+t1398992838
+s24492
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+c000000005362EFC60000000000004440
+t1398992838
+s17472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+c000000005362EFC6000000000000AA28
+t1398992838
+s43560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+c000000005362EFC60000000000003E2C
+t1398992838
+s15916
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+c000000005362EFC60000000000030B04
+t1398992838
+s199428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+c000000005362EFC60000000000005E54
+t1398992838
+s24148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+c000000005362EFC60000000000006A90
+t1398992838
+s27280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+c000000005362EFC600000000000178AC
+t1398992838
+s96428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+c000000005362EFC6000000000001ADC8
+t1398992838
+s110024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+c000000005362EFC6000000000001028C
+t1398992838
+s66188
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+c000000005362EFC60000000000008800
+t1398992838
+s34816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+c000000005362EFC60000000000011090
+t1398992838
+s69776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+c000000005362EFC6000000000000882C
+t1398992838
+s34860
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+c000000005362EFC600000000000067AC
+t1398992838
+s26540
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+c000000005362EFC60000000000008DEC
+t1398992838
+s36332
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+c000000005362EFC60000000000004C08
+t1398992838
+s19464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+c000000005362EFC60000000000002428
+t1398992838
+s9256
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+c000000005362EFC6000000000000439C
+t1398992838
+s17308
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+c000000005362EFC60000000000006768
+t1398992838
+s26472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+c000000005362EFC600000000000172F4
+t1398992838
+s94964
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_macosx.a
+c000000005362EFCD000000000000BAF8
+t1398992845
+s47864
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.eprintf.a
+c000000005362EFCD0000000000000720
+t1398992845
+s1824
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+c000000005362EFCD0000000000001770
+t1398992845
+s6000
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000005272C94600000000000066C0
+t1383254342
+s26304
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA
+t1427397468
+s204432
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA.LinkFileList
+c000000005431F6890000000000000119
+t1412560521
+s281
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARAFilter.o
+t1427397467
+s422056
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/ROIPoint.o
+t1427397402
+s18708
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA
+t1427397468
+s254744
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA.LinkFileList
+c000000005431EE80000000000000011D
+t1412558464
+s285
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARAFilter.o
+t1427397467
+s456664
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/ROIPoint.o
+t1427397402
+s26796
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bgnxlodwmnrqyfddfxbgphkhjfcd/PFARA_Prefix.pch.pch
+t1427397402
+s13503156
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bhhjtnlqmxushxduykchjlhgedzk/PFARA_Prefix.pch.pch
+t1427397402
+s14091232
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-dowcfibjuwraileofrfmwfccdkug/PFARA_Prefix.pch.pch
+t1412558467
+s13503156
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-drsasnxandoyobgungjslhizhuem/PFARA_Prefix.pch.pch
+t1412560522
+s14091232
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin
+t1427397404
+s102
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Info.plist
+t1427397399
+s1131
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA
+t1427397468
+s466576
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Resources/English.lproj/InfoPlist.strings
+t1427397399
+s448
+
+N/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Resources/PFARA.nib
+t1427397400
+s41024
+
+N/Users/CJ/Documents/dev/PFARA-DEV/English.lproj/InfoPlist.strings
+c000000005431F3FD00000000000001C0
+t1412559869
+s448
+
+N/Users/CJ/Documents/dev/PFARA-DEV/Info.plist
+c000000005431F3FD00000000000002EE
+t1412559869
+s750
+
+N/Users/CJ/Documents/dev/PFARA-DEV/OsiriX Headers/DCMAttribute.h
+c000000004AEB1A920000000000001196
+t1256921746
+s4502
+
+N/Users/CJ/Documents/dev/PFARA-DEV/OsiriX Headers/DCMObject.h
+c000000004AEB1A920000000000003883
+t1256921746
+s14467
+
+N/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/DCMPix.h
+c00000000533D677100000000000063C4
+t1396533105
+s25540
+
+N/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/DCMView.h
+c00000000533D67710000000000005C67
+t1396533105
+s23655
+
+N/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/MyPoint.h
+c00000000533D67720000000000000389
+t1396533106
+s905
+
+N/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/N3Geometry.h
+c00000000533D67720000000000002B6D
+t1396533106
+s11117
+
+N/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/OSIWindowController.h
+c00000000533D677200000000000007A9
+t1396533106
+s1961
+
+N/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/PluginFilter.h
+c00000000533D67720000000000000F03
+t1396533106
+s3843
+
+N/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/ROI.h
+c00000000533D677200000000000034AA
+t1396533106
+s13482
+
+N/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/ViewerController.h
+c00000000533D67720000000000009841
+t1396533106
+s38977
+
+N/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/OsiriXAPI
+c00000000533D6774000000000000E640
+t1396533108
+s58944
+
+N/Users/CJ/Documents/dev/PFARA-DEV/Osirix Headers/DCMAttributeTag.h
+c000000004AEB1A920000000000000A12
+t1256921746
+s2578
+
+N/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib
+c000000005431F49E0000000000013037
+t1412560030
+s77879
+
+N/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.h
+c0000000053DAB39900000000000015B3
+t1406841753
+s5555
+
+N/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m
+c0000000055145B5B00000000000263A7
+t1427397467
+s156583
+
+N/Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch
+c00000000533D677400000000000000C0
+t1396533108
+s192
+
+N/Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.h
+c000000005431F4C400000000000007A9
+t1412560068
+s1961
+
+N/Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m
+c000000005431F543000000000000023D
+t1412560195
+s573
+
+CBuild AST from /Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m
+r0
+
+CBuild AST from /Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies07b381db92c4ba41^c65082db92c4ba41^---0#1#1#--18"Check dependencies36"A8E1F844-DBA8-4561-94FE-E5A6D7FA5AF4-
+
+CCompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARAFilter.o /Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s449090267.509358
+e449090268.001758
+r1
+xCompileC
+xDerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARAFilter.o
+x/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m
+d/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/PluginFilter.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/DCMPix.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/ViewerController.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/OSIWindowController.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/DCMView.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/N3Geometry.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/MyPoint.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/ROI.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriX Headers/DCMObject.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriX Headers/DCMAttribute.h
+d/Users/CJ/Documents/dev/PFARA-DEV/Osirix Headers/DCMAttributeTag.h
+d/Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.h
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:659:37: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                                  informativeTextWithFormat:msg];
+o                                                                                            ^~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2647:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2661:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2674:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2687:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2741:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2755:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2768:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2781:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o9 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Compile /Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m198"CompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARAFilter.o PFARAFilter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler908782db92c4ba41^5c7200dc92c4ba41^-2978"/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:659:37: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                                  informativeTextWithFormat:msg];                                                                                            ^~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2647:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2661:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2674:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2687:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2741:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2755:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2768:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2781:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~9 warnings generated.9(36%IDEClangDiagnosticActivityLogMessage2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^658#36#658#36#17511#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^658#36#658#39#17511#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2646#35#2646#35#78054#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2646#35#2646#39#78054#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2660#35#2660#35#78459#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2660#35#2660#39#78459#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2673#35#2673#35#78874#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2673#35#2673#39#78874#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2686#35#2686#35#79261#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2686#35#2686#39#79261#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2740#35#2740#35#81018#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2740#35#2740#39#81018#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2754#35#2754#35#81484#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2754#35#2754#39#81484#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2767#35#2767#35#81907#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2767#35#2767#39#81907#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2780#35#2780#35#82336#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2780#35#2780#39#82336#0#-0#0#1#-19%DVTDocumentLocation4@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2711"CompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARAFilter.o PFARAFilter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/CJ/Documents/dev/PFARA-DEV    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.5 -g -Wno-sign-conversion -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/PFARA.hmap -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/include -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources/i386 -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV -include /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bhhjtnlqmxushxduykchjlhgedzk/PFARA_Prefix.pch -MMD -MT dependencies -MF /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARAFilter.d --serialize-diagnostics /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARAFilter.dia -c /Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARAFilter.o36"EC90B1E9-1F93-48CB-BEA2-399863AAA9C5-
+bF6A9EB40-F175-4B0D-B25B-723D645105FC
+
+CCompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/ROIPoint.o /Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s449090202.859973
+e449090202.959377
+r1
+xCompileC
+xDerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/ROIPoint.o
+x/Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m
+d/Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m192"CompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/ROIPoint.o ROIPoint.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler1844dc9a92c4ba41^1e87f59a92c4ba41^---0#0#1#-19%DVTDocumentLocation2@51"file:///Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m0000000000000000^2693"CompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/ROIPoint.o ROIPoint.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/CJ/Documents/dev/PFARA-DEV    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.5 -g -Wno-sign-conversion -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/PFARA.hmap -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/include -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources/i386 -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV -include /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bhhjtnlqmxushxduykchjlhgedzk/PFARA_Prefix.pch -MMD -MT dependencies -MF /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/ROIPoint.d --serialize-diagnostics /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/ROIPoint.dia -c /Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/ROIPoint.o36"CD98CD84-B333-4B2F-8299-0049B22A2C35-
+b0985DE3A-4ABA-4700-8D50-797483F71BD6
+
+CCompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARAFilter.o /Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s449090267.508991
+e449090268.011145
+r1
+xCompileC
+xDerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARAFilter.o
+x/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m
+d/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/PluginFilter.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/DCMPix.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/ViewerController.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/OSIWindowController.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/DCMView.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/N3Geometry.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/MyPoint.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/Headers/ROI.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriX Headers/DCMObject.h
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriX Headers/DCMAttribute.h
+d/Users/CJ/Documents/dev/PFARA-DEV/Osirix Headers/DCMAttributeTag.h
+d/Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.h
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:659:37: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                                  informativeTextWithFormat:msg];
+o                                                                                            ^~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2647:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2661:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2674:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2687:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2741:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2755:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2768:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2781:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                                                          informativeTextWithFormat:text];
+o                                                                                    ^~~~
+o9 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Compile /Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m202"CompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARAFilter.o PFARAFilter.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerb16c82db92c4ba41^45da02dc92c4ba41^-2978"/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:659:37: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                                  informativeTextWithFormat:msg];                                                                                            ^~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2647:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2661:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2674:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2687:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2741:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2755:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2768:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~/Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m:2781:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                                                          informativeTextWithFormat:text];                                                                                    ^~~~9 warnings generated.9(36%IDEClangDiagnosticActivityLogMessage2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^658#36#658#36#17511#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^658#36#658#39#17511#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2646#35#2646#35#78054#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2646#35#2646#39#78054#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2660#35#2660#35#78459#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2660#35#2660#39#78459#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2673#35#2673#35#78874#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2673#35#2673#39#78874#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2686#35#2686#35#79261#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2686#35#2686#39#79261#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2740#35#2740#35#81018#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2740#35#2740#39#81018#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2754#35#2754#35#81484#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2754#35#2754#39#81484#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2767#35#2767#35#81907#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2767#35#2767#39#81907#0#-2@60"Format string is not a string literal (potentially insecure)-449090268#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2780#35#2780#35#82336#0#19"Format String Issue1(3@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2780#35#2780#39#82336#0#-0#0#1#-19%DVTDocumentLocation4@54"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m0000000000000000^2725"CompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARAFilter.o PFARAFilter.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/CJ/Documents/dev/PFARA-DEV    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.5 -g -Wno-sign-conversion -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/PFARA.hmap -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/include -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources/x86_64 -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV -include /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bgnxlodwmnrqyfddfxbgphkhjfcd/PFARA_Prefix.pch -MMD -MT dependencies -MF /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARAFilter.d --serialize-diagnostics /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARAFilter.dia -c /Users/CJ/Documents/dev/PFARA-DEV/PFARAFilter.m -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARAFilter.o36"BA0B9035-D5C2-474B-9221-D86EE04E45A0-
+bF6A9EB40-F175-4B0D-B25B-723D645105FC
+
+CCompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/ROIPoint.o /Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s449090202.858338
+e449090202.951206
+r1
+xCompileC
+xDerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/ROIPoint.o
+x/Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m
+d/Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m196"CompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/ROIPoint.o ROIPoint.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerdcd5db9a92c4ba41^3d99f39a92c4ba41^---0#0#1#-19%DVTDocumentLocation2@51"file:///Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m0000000000000000^2707"CompileC DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/ROIPoint.o ROIPoint.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/CJ/Documents/dev/PFARA-DEV    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.5 -g -Wno-sign-conversion -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/PFARA.hmap -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/include -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources/x86_64 -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV -include /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bgnxlodwmnrqyfddfxbgphkhjfcd/PFARA_Prefix.pch -MMD -MT dependencies -MF /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/ROIPoint.d --serialize-diagnostics /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/ROIPoint.dia -c /Users/CJ/Documents/dev/PFARA-DEV/ROIPoint.m -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/ROIPoint.o36"65A9FB99-06AF-43B3-8A7A-28C72647E77A-
+b0985DE3A-4ABA-4700-8D50-797483F71BD6
+
+CCompileXIB /Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib
+s449090199.635886
+e449090201.267876
+r1
+xCompileXIB
+x/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib
+o/* com.apple.ibtool.document.notices */
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1045: note: View is clipping its content [13]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1100: note: View is clipping its content [13]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1024: note: View is clipping its content [13]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1023: note: View is clipping its content [13]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:892: note: View is clipping its content [13]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1003: note: View is clipping its content [13]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1036: note: View is clipping its content [13]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:902: note: View is clipping its content [13]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1042: note: View is clipping its content [13]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1230: note: View is clipping its content [13]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1101: note: View is clipping its content [13]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:900: note: View is clipping its content [13]
+o/* com.apple.ibtool.document.warnings */
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:903: warning: Layout Direction on OS X versions prior to 10.6 [5]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1102: warning: Layout Direction on OS X versions prior to 10.6 [5]
+o/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1025: warning: Layout Direction on OS X versions prior to 10.6 [5]
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Compiling /Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib20"CompileXIB PFARA.xib6ce8a29792c4ba41^83354a9992c4ba41^-1418"/* com.apple.ibtool.document.notices *//Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1045: note: View is clipping its content/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1100: note: View is clipping its content/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1024: note: View is clipping its content/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1023: note: View is clipping its content/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:892: note: View is clipping its content/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1003: note: View is clipping its content/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1036: note: View is clipping its content/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:902: note: View is clipping its content/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1042: note: View is clipping its content/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1230: note: View is clipping its content/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1101: note: View is clipping its content/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:900: note: View is clipping its content/* com.apple.ibtool.document.warnings *//Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:903: warning: Layout Direction on OS X versions prior to 10.6/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1102: warning: Layout Direction on OS X versions prior to 10.6/Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib:1025: warning: Layout Direction on OS X versions prior to 10.615(21%IDEActivityLogMessage2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-23%DVTTextDocumentLocation3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^1044#18446744073709551615#1044#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^1099#18446744073709551615#1099#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^1023#18446744073709551615#1023#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^1022#18446744073709551615#1022#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^891#18446744073709551615#891#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^1002#18446744073709551615#1002#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^1035#18446744073709551615#1035#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^901#18446744073709551615#901#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^1041#18446744073709551615#1041#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^1229#18446744073709551615#1229#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^1100#18446744073709551615#1100#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-449090201#18446744073709551615#0#-0#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^899#18446744073709551615#899#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@47"Layout Direction on OS X versions prior to 10.6-449090201#18446744073709551615#0#-1#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^902#18446744073709551615#902#18446744073709551615#18446744073709551615#0#21"Attribute Unavailable--2@47"Layout Direction on OS X versions prior to 10.6-449090201#18446744073709551615#0#-1#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^1101#18446744073709551615#1101#18446744073709551615#18446744073709551615#0#21"Attribute Unavailable--2@47"Layout Direction on OS X versions prior to 10.6-449090201#18446744073709551615#0#-1#-3@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^1024#18446744073709551615#1024#18446744073709551615#18446744073709551615#0#21"Attribute Unavailable--0#0#1#-19%DVTDocumentLocation4@50"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib0000000000000000^494"CompileXIB PFARA.xib    cd /Users/CJ/Documents/dev/PFARA-DEV    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.5 --output-format human-readable-text --compile /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Resources/PFARA.nib /Users/CJ/Documents/dev/PFARA-DEV/PFARA.xib36"8B7C9C59-B39F-4FD2-8744-AFD47F8925A2-
+b0985DE3A-4ABA-4700-8D50-797483F71BD6
+
+CCopyStringsFile /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s449090199.635738
+e449090199.650024
+r1
+xCopyStringsFile
+x/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy English.lproj/InfoPlist.strings162"CopyStringsFile DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.stringsfad3a29792c4ba41^b268a69792c4ba41^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/CJ/Documents/dev/PFARA-DEV/English.lproj/InfoPlist.strings0000000000000000^461"CopyStringsFile DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings    cd /Users/CJ/Documents/dev/PFARA-DEV    builtin-copyStrings --validate --inputencoding utf-16 --outputencoding UTF-16 --outdir /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Resources/English.lproj -- English.lproj/InfoPlist.strings36"F2358BF6-AB4B-4D71-BF22-64E5A98580B5-
+b0985DE3A-4ABA-4700-8D50-797483F71BD6
+
+CCreateUniversalBinary /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA normal x86_64\ i386
+s449090268.093391
+e449090268.176324
+r1
+xCreateUniversalBinary
+x/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA
+xnormal
+xx86_64 i386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection142"Create universal binary /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA126"CreateUniversalBinary DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA normal x86_64\ i386aaf417dc92c4ba41^f2242ddc92c4ba41^---0#0#1#-19%DVTDocumentLocation2@125"file:///Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA0000000000000000^669"CreateUniversalBinary DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA normal x86_64\ i386    cd /Users/CJ/Documents/dev/PFARA-DEV    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA -output /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA36"6FEF1C1F-2FDA-45C2-9700-4E5F067188E8-
+bF6A9EB40-F175-4B0D-B25B-723D645105FC
+
+CLd /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA normal i386
+s449090268.012643
+e449090268.091756
+r1
+xLd
+x/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA
+xnormal
+xi386
+d/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/bundle1.o
+d/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARAFilter.o
+d/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/ROIPoint.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/OsiriXAPI
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libgcc_s.10.5.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.eprintf.a
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection138"Link /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA114"Ld DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA normal i3863d4803dc92c4ba41^1c7e17dc92c4ba41^---0#0#1#--1218"Ld DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA normal i386    cd /Users/CJ/Documents/dev/PFARA-DEV    export MACOSX_DEPLOYMENT_TARGET=10.5    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV -filelist /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA.LinkFileList -mmacosx-version-min=10.5 -undefined dynamic_lookup -fobjc-link-runtime -framework Cocoa -weak_framework OsiriXAPI -Xlinker -dependency_info -Xlinker /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA_dependency_info.dat -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/i386/PFARA36"E2FBD478-7A1E-43E2-AC51-0BF9DB489493-
+bF6A9EB40-F175-4B0D-B25B-723D645105FC
+
+CLd /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA normal x86_64
+s449090268.012470
+e449090268.092575
+r1
+xLd
+x/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA
+xnormal
+xx86_64
+d/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/bundle1.o
+d/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARAFilter.o
+d/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/ROIPoint.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/OsiriXAPI
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_macosx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libgcc_s.10.5.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection140"Link /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA118"Ld DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA normal x86_64ab4203dc92c4ba41^70b417dc92c4ba41^---0#0#1#--1230"Ld DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA normal x86_64    cd /Users/CJ/Documents/dev/PFARA-DEV    export MACOSX_DEPLOYMENT_TARGET=10.5    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV -filelist /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA.LinkFileList -mmacosx-version-min=10.5 -undefined dynamic_lookup -fobjc-link-runtime -framework Cocoa -weak_framework OsiriXAPI -Xlinker -dependency_info -Xlinker /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA_dependency_info.dat -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA36"38F74D9D-E4AB-41EE-84D1-630D45D1C7B7-
+bF6A9EB40-F175-4B0D-B25B-723D645105FC
+
+CLd /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA normal x86_64
+s434252995.790885
+e434252995.863797
+r1
+xLd
+x/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA
+xnormal
+xx86_64
+d/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/bundle1.o
+d/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARAFilter.o
+d/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/ROIPoint.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/Users/CJ/Documents/dev/PFARA-DEV/OsiriXAPI.framework/OsiriXAPI
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_macosx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libgcc_s.10.5.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"Link /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA101"Ld DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA normal x86_640e86cac32ce2b941^6023ddc32ce2b941^---0#0#1#--1196"Ld DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA normal x86_64    cd /Users/CJ/Documents/dev/PFARA-DEV    export MACOSX_DEPLOYMENT_TARGET=10.5    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV -filelist /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA.LinkFileList -mmacosx-version-min=10.5 -undefined dynamic_lookup -fobjc-link-runtime -framework Cocoa -weak_framework OsiriXAPI -Xlinker -dependency_info -Xlinker /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/Objects-normal/x86_64/PFARA_dependency_info.dat -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/MacOS/PFARA36"DC7FBE94-C73F-42FE-9A9B-84327B3FD01D-
+b044D4CA1-4573-4046-83AE-8C5945E46C19
+
+CProcessInfoPlistFile /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Info.plist /Users/CJ/Documents/dev/PFARA-DEV/Info.plist
+s449090199.629263
+e449090199.635060
+r1
+xProcessInfoPlistFile
+x/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Info.plist
+x/Users/CJ/Documents/dev/PFARA-DEV/Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Process /Users/CJ/Documents/dev/PFARA-DEV/Info.plist115"ProcessInfoPlistFile DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Info.plist Info.plist00ada19792c4ba41^9430a39792c4ba41^---0#0#1#-19%DVTDocumentLocation2@51"file:///Users/CJ/Documents/dev/PFARA-DEV/Info.plist0000000000000000^390"ProcessInfoPlistFile DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Info.plist Info.plist    cd /Users/CJ/Documents/dev/PFARA-DEV    builtin-infoPlistUtility /Users/CJ/Documents/dev/PFARA-DEV/Info.plist -expandbuildsettings -platform macosx -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin/Contents/Info.plist36"946B1E37-32FB-4367-B18A-73F924BA13B3-
+b0985DE3A-4ABA-4700-8D50-797483F71BD6
+
+CProcessPCH /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bgnxlodwmnrqyfddfxbgphkhjfcd/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s449090201.268805
+e449090202.826147
+r1
+xProcessPCH
+x/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bgnxlodwmnrqyfddfxbgphkhjfcd/PFARA_Prefix.pch.pch
+xPFARA_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection27"Precompile PFARA_Prefix.pch217"ProcessPCH DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bgnxlodwmnrqyfddfxbgphkhjfcd/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler9df2449992c4ba41^d47ed39a92c4ba41^---0#0#1#-19%DVTDocumentLocation2@57"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch0000000000000000^2617"ProcessPCH DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bgnxlodwmnrqyfddfxbgphkhjfcd/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/CJ/Documents/dev/PFARA-DEV    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.5 -g -Wno-sign-conversion -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/PFARA.hmap -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/include -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources/x86_64 -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV --serialize-diagnostics /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bgnxlodwmnrqyfddfxbgphkhjfcd/PFARA_Prefix.pch.dia -MMD -MT dependencies -MF /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bgnxlodwmnrqyfddfxbgphkhjfcd/PFARA_Prefix.pch.d -c /Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bgnxlodwmnrqyfddfxbgphkhjfcd/PFARA_Prefix.pch.pch36"6AC207D7-E5D2-42C4-97DF-0F6F988A6369-
+b0985DE3A-4ABA-4700-8D50-797483F71BD6
+
+CProcessPCH /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bhhjtnlqmxushxduykchjlhgedzk/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s449090201.269354
+e449090202.856579
+r1
+xProcessPCH
+x/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bhhjtnlqmxushxduykchjlhgedzk/PFARA_Prefix.pch.pch
+xPFARA_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection27"Precompile PFARA_Prefix.pch215"ProcessPCH DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bhhjtnlqmxushxduykchjlhgedzk/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler840f459992c4ba41^dc4adb9a92c4ba41^---0#0#1#-19%DVTDocumentLocation2@57"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch0000000000000000^2611"ProcessPCH DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bhhjtnlqmxushxduykchjlhgedzk/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/CJ/Documents/dev/PFARA-DEV    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.5 -g -Wno-sign-conversion -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/PFARA.hmap -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/include -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources/i386 -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV --serialize-diagnostics /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bhhjtnlqmxushxduykchjlhgedzk/PFARA_Prefix.pch.dia -MMD -MT dependencies -MF /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bhhjtnlqmxushxduykchjlhgedzk/PFARA_Prefix.pch.d -c /Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-bhhjtnlqmxushxduykchjlhgedzk/PFARA_Prefix.pch.pch36"A6F0F95A-8B28-4CA3-801C-C0AF3C7975D5-
+b0985DE3A-4ABA-4700-8D50-797483F71BD6
+
+CProcessPCH /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-dowcfibjuwraileofrfmwfccdkug/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s434251266.047501
+e434251267.159388
+r1
+xProcessPCH
+x/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-dowcfibjuwraileofrfmwfccdkug/PFARA_Prefix.pch.pch
+xPFARA_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection27"Precompile PFARA_Prefix.pch217"ProcessPCH DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-dowcfibjuwraileofrfmwfccdkug/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerbf440c0226e2b941^a3ce280326e2b941^---0#0#1#-19%DVTDocumentLocation2@57"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch0000000000000000^2617"ProcessPCH DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-dowcfibjuwraileofrfmwfccdkug/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/CJ/Documents/dev/PFARA-DEV    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.5 -g -Wno-sign-conversion -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/PFARA.hmap -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/include -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources/x86_64 -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV --serialize-diagnostics /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-dowcfibjuwraileofrfmwfccdkug/PFARA_Prefix.pch.dia -MMD -MT dependencies -MF /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-dowcfibjuwraileofrfmwfccdkug/PFARA_Prefix.pch.d -c /Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-dowcfibjuwraileofrfmwfccdkug/PFARA_Prefix.pch.pch36"9DED17F9-A048-41E7-8C3E-E13C614C5BEA-
+b2C5F76F5-8038-4CE5-A480-A9A55F5E6198
+
+CProcessPCH /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-drsasnxandoyobgungjslhizhuem/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s434253321.511095
+e434253322.297531
+r1
+xProcessPCH
+x/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-drsasnxandoyobgungjslhizhuem/PFARA_Prefix.pch.pch
+xPFARA_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection27"Precompile PFARA_Prefix.pch215"ProcessPCH DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-drsasnxandoyobgungjslhizhuem/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf3e882092ee2b941^5a2d4c0a2ee2b941^---0#0#1#-19%DVTDocumentLocation2@57"file:///Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch0000000000000000^2611"ProcessPCH DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-drsasnxandoyobgungjslhizhuem/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/CJ/Documents/dev/PFARA-DEV    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.5 -g -Wno-sign-conversion -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/PFARA.hmap -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/include -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources/i386 -I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PFARA.build/Development/PFARA.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development -F/Users/CJ/Documents/dev/PFARA-DEV --serialize-diagnostics /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-drsasnxandoyobgungjslhizhuem/PFARA_Prefix.pch.dia -MMD -MT dependencies -MF /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-drsasnxandoyobgungjslhizhuem/PFARA_Prefix.pch.d -c /Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch -o /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Intermediates/PrecompiledHeaders/PFARA_Prefix-drsasnxandoyobgungjslhizhuem/PFARA_Prefix.pch.pch36"714002D8-992A-4551-B6AE-6FFD354F53D3-
+bE244AD16-9C95-48AC-881D-E7B2FBD1E31E
+
+CProcessPCH /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Index/PrecompiledHeaders/PFARA_Prefix-asfqvlsgtavdonaqwfolbwtatnnk_ast/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Index/PrecompiledHeaders/PFARA_Prefix-bbdckipxcnsnmsakvkrpapgfnwou_ast/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Index/PrecompiledHeaders/PFARA_Prefix-bdirilnsdwgdxgefrrukglwywtyx_ast/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Index/PrecompiledHeaders/PFARA_Prefix-goulibthtntxsxhbllxwhlynjakc_ast/PFARA_Prefix.pch.pch PFARA_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin
+s449090268.176871
+e449090268.181107
+r1
+xTouch
+x/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Touch /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin69"Touch DerivedData/PFARA/Build/Products/Development/PFARA.osirixpluginec502ddc92c4ba41^465e2edc92c4ba41^---0#0#1#--231"Touch DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin    cd /Users/CJ/Documents/dev/PFARA-DEV    /usr/bin/touch -c /Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/PFARA.osirixplugin36"B4DFE12B-F573-4042-87AC-FAF7FE26AFA7-
+bF6A9EB40-F175-4B0D-B25B-723D645105FC
+

@@ -1,0 +1,19 @@
+Contents of /Users/CJ/Documents/dev/PFARA-DEV/PFARA_Prefix.pch
+-x
+objective-c
+-arch
+i386
+-fpascal-strings
+-O0
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+-fasm-blocks
+-mmacosx-version-min=10.5
+-g
+-I/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development/include
+-F/Users/CJ/Documents/dev/PFARA-DEV/DerivedData/PFARA/Build/Products/Development
+-F/Users/CJ/Documents/dev/PFARA-DEV
+i386-apple-darwin13.4.0
+"4.2.1 Compatible Apple LLVM 5.1 (clang-503.0.40)"
+SDK_PRODUCT_BUILD_VERSION=13C64
+13C64
