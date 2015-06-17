@@ -2876,7 +2876,26 @@
 	{
 		return;
 	}
-
+    
+    // determine output type
+    if ([[cboOutputTo stringValue] isEqualToString:@"Word"]) {
+        myAlert = [NSAlert alertWithMessageText:@"Word"
+                                  defaultButton:@"OK"
+                                alternateButton:nil
+                                    otherButton:nil
+                      informativeTextWithFormat:nil];
+        [myAlert runModal];
+    }
+    else if([[cboOutputTo stringValue] isEqualToString:@"TextEdit"]){
+        myAlert = [NSAlert alertWithMessageText:@"TextEdit"
+                                  defaultButton:@"OK"
+                                alternateButton:nil
+                                    otherButton:nil
+                      informativeTextWithFormat:nil];
+        [myAlert runModal];
+    }
+    
+    
 	// alert user to close TextEdit if already running
 	if([self textEditRunning])
 	{
@@ -4793,6 +4812,7 @@
 				[txtFatR setHidden:NO];
 			}
 			
+            [cboOutputTo setHidden:NO];
 			[btnCreateReport setHidden:NO];
 			
 			// disable next page button
@@ -5066,6 +5086,7 @@
 			[txtFatR setHidden:YES];
 			[txtFatLblR setHidden:YES];				
 			
+            [cboOutputTo setHidden:YES];
 			[btnCreateReport setHidden:YES];
 			
 			// enable next page button

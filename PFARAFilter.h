@@ -46,6 +46,7 @@
 	IBOutlet NSButton		*chkAutoDelete;
 	IBOutlet NSButton		*chkReviewImg;
 	IBOutlet NSButton		*btnSummary;
+    IBOutlet NSComboBox     *cboOutputTo;
 	IBOutlet NSButton		*btnCreateReport;
 	
 	IBOutlet NSTextField	*txtPath;
