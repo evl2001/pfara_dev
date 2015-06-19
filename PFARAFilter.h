@@ -150,6 +150,7 @@
 - (IBAction) refPtChanged:		(id)sender;
 - (BOOL) textEditRunning;
 - (IBAction) createReport:		(id)sender;
+- (void) outputToTextEdit:  (short)refPtImgNum refX:(float)refPtX refZ:(float)refPtZ;
 - (IBAction) setLeftDIEA:		(id)sender;
 - (IBAction) setRightDIEA:		(id)sender;
 - (void) backupDIEA;

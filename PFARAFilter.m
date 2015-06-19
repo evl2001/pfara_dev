@@ -155,9 +155,36 @@
 
 - (IBAction)test:(id)sender
 {
-	NSString *msg;
 	NSAlert *myAlert;
+    NSString *outputTo = [cboOutputTo stringValue];
 
+    // determine output type
+    if([outputTo isEqualToString:@"Word"]) {
+        myAlert = [NSAlert alertWithMessageText:@"Word"
+                                  defaultButton:@"OK"
+                                alternateButton:nil
+                                    otherButton:nil
+                      informativeTextWithFormat:@""];
+        [myAlert runModal];
+    }
+    else if([outputTo isEqualToString:@"TextEdit"]){
+        myAlert = [NSAlert alertWithMessageText:@"TextEdit"
+                                  defaultButton:@"OK"
+                                alternateButton:nil
+                                    otherButton:nil
+                      informativeTextWithFormat:@""];
+        [myAlert runModal];
+    }
+    else{
+        myAlert = [NSAlert alertWithMessageText:@"No output format specified"
+                                  defaultButton:@"OK"
+                                alternateButton:nil
+                                    otherButton:nil
+                      informativeTextWithFormat:@"Please select from the dropdown"];
+        [myAlert runModal];
+    }
+    
+    /*
 	for(ROIPoint *pt in roiPoints)
 	{
 		msg = [NSString stringWithFormat:@"id:%@\nx:%f\ny:%f\nz:%f", pt.roiID, pt.x3D, pt.y3D, pt.z3D];
@@ -168,6 +195,7 @@
 					  informativeTextWithFormat:@""];
 		[myAlert runModal];		
 	}
+    */
 }
 
 - (IBAction)clickRefROI: (id)sender
@@ -2878,24 +2906,43 @@
 	}
     
     // determine output type
-    if ([[cboOutputTo stringValue] isEqualToString:@"Word"]) {
+    NSString *outputTo = [cboOutputTo stringValue];
+    
+    // determine output type
+    if([outputTo isEqualToString:@"Word"]) {
         myAlert = [NSAlert alertWithMessageText:@"Word"
                                   defaultButton:@"OK"
                                 alternateButton:nil
                                     otherButton:nil
-                      informativeTextWithFormat:nil];
+                      informativeTextWithFormat:@""];
         [myAlert runModal];
+        
+        
+        //[self outputToWord];
     }
-    else if([[cboOutputTo stringValue] isEqualToString:@"TextEdit"]){
+    else if([outputTo isEqualToString:@"TextEdit"]){
         myAlert = [NSAlert alertWithMessageText:@"TextEdit"
                                   defaultButton:@"OK"
                                 alternateButton:nil
                                     otherButton:nil
-                      informativeTextWithFormat:nil];
+                      informativeTextWithFormat:@""];
         [myAlert runModal];
+        
+        //[self getPostProjY2D:pt.y2D onSlice:pt.slice withX:pt.x2D]
+        [self outputToTextEdit:refPtImgNum refX:refPtX refZ:refPtZ];
+    }
+    else{
+        myAlert = [NSAlert alertWithMessageText:@"No output format specified"
+                                  defaultButton:@"OK"
+                                alternateButton:nil
+                                    otherButton:nil
+                      informativeTextWithFormat:@"Please select from the dropdown"];
+        [myAlert runModal];
+        
+        return;
     }
     
-    
+/*
 	// alert user to close TextEdit if already running
 	if([self textEditRunning])
 	{
@@ -3585,7 +3632,702 @@
 		[scriptObject release];		
 	}
 	////// end fat volume section
+*/
+}
+
+-(void)outputToTextEdit:(short)refPtImgNum refX:(float)refPtX refZ:(float)refPtZ
+{
+    NSAlert *myAlert;
+
+	// alert user to close TextEdit if already running
+	if([self textEditRunning])
+	{
+		myAlert = [NSAlert alertWithMessageText:@"TextEdit needs to be terminated before generating the report"
+								  defaultButton:@"OK, Terminate"
+								alternateButton:@"NO"
+									otherButton:nil
+					  informativeTextWithFormat:@"Please save any open documents"];
+		
+		NSInteger clicked = [myAlert runModal];
+		
+		if(clicked == NSAlertDefaultReturn)
+		{
+			[self quitTextEdit];
+		}
+		else if(clicked != NSAlertDefaultReturn)
+		{
+			return;
+		}
+		
+	}
+    
+	// Applescript
+	NSDictionary* errorDict;
+	NSAppleEventDescriptor* returnDescriptor = NULL;
 	
+	NSString* reportGenScript;
+	NSAppleScript* scriptObject;
+	NSString* patientPos;
+	
+	if ([chkSupine state] == NSOnState)
+	{
+		patientPos = @"supine";
+	}
+	else
+	{
+		patientPos = @"prone";
+	}
+    
+	
+	if ([refPt isEqualToString:@"IGC"])
+	{
+		reportGenScript = [NSString stringWithFormat:@"tell application \"TextEdit\"\nset text of document 1 to \"Perforator Flap Angiography Report (PAP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through posterior thigh muscles.\n\nTechnique: MRA of the lower extremities with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium, post Gd axial, coronal and sagittal 3D High resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBoth the Right and Left superficial femoral and profunda femoris arteries are widely patent.\n\nInferior Gluteal Crease (IGC): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\"\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, seriesNum, refPtImgNum];
+	}
+	else if([refPt isEqualToString:@"SGC"])
+	{
+		reportGenScript = [NSString stringWithFormat:@"tell application \"TextEdit\"\nset text of document 1 to \"Perforator Flap Angiography Report (SGAP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through gluteal muscles.\n\nTechnique: MRA of the pelvis with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium (preceded by 0.5 mg glucagon to reduce peristalsis), post Gd axial, coronal and sagittal 3D High resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBoth the Right and Left superior and inferior gluteal arteries are widely patent.\n\nSuperior Gluteal Crease (SGC): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\"\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, seriesNum, refPtImgNum];
+	}
+	else if([refPt isEqualToString:@"SSN"])
+	{
+		reportGenScript = [NSString stringWithFormat:@"tell application \"TextEdit\"\nset text of document 1 to \"Perforator Flap Angiography Report (TDAP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate thoracodorsal artery perforators.\n\nTechnique: MRA of the chest with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ with hands above the head for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium, post Gd axial, coronal and sagittal 3D High resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBilateral internal mammary and thoracodorsal arteries are widely patent.\n\nSuprasternal Notch (SSN): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\"\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, seriesNum, refPtImgNum];
+	}
+	else if([refPt isEqualToString:@"UMB"])
+	{
+		if([chkQuickReport state] == NSOnState)
+		{
+			reportGenScript = [NSString stringWithFormat:@"tell application \"TextEdit\"\nset text of document 1 to \"Perforator Flap Angiography Report (DIEP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through abdominal muscles.\n\nTechnique: CTA of the abdomen and pelvis with and without contrast. The patient was positioned %@. 3D images were post-processed on a computer workstation.\n\nComparison: None\n\nFindings:\n\nBoth the Right and Left Inferior Epigastric Arteries are widely patent down to insertion on common femoral artery.\n\nLeft DIEA:\t\tType %d branching pattern\nRight DIEA: \tType %d branching pattern\n\nUmbilicus (UMB): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\"\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, leftDIEA, rightDIEA, seriesNum, refPtImgNum];
+		}
+		else
+		{
+			reportGenScript = [NSString stringWithFormat:@"tell application \"TextEdit\"\nset text of document 1 to \"Perforator Flap Angiography Report (DIEP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through abdominal muscles.\n\nTechnique: MRA of the abdomen with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium (preceded by 0.5 mg glucagon to reduce peristalsis), post Gd axial, coronal and sagittal 3D high resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBoth the Right and Left Inferior Epigastric Arteries are widely patent down to insertion on common femoral artery.\n\nLeft DIEA:\t\tType %d branching pattern\nRight DIEA: \tType %d branching pattern\n\nUmbilicus (UMB): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\"\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, leftDIEA, rightDIEA, seriesNum, refPtImgNum];
+		}
+	}
+	else
+	{
+		//unknown reference point!
+		//refPtText = @"UNKNOWN REFERENCE POINT!";
+        reportGenScript = @"";
+	}
+	
+	// Generate text header ///////////////////////
+	
+	scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+	
+	returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+	
+	if(returnDescriptor != NULL)
+	{
+		// successful execution
+		if(kAENullEvent != [returnDescriptor descriptorType])
+		{
+			// script returned an AppleScript result
+			if(cAEList == [returnDescriptor descriptorType])
+			{
+				// result is a list of other descriptors
+			}
+			else
+			{
+				// coerce the result to the appropriate ObjC type
+			}
+		}
+	}
+	else
+	{
+		// no script result; handle error here
+	}
+	
+	[scriptObject release];
+    
+	///////////////////// Begin Perforator Distance Measurement Table //////////////////////////////
+	int i;
+	NSString* side = @"Left";
+	float distToRef;
+	NSString* locRelToRef;
+	
+	for(i = 0; i < 2; i++)
+	{
+		if ([refPt isEqualToString:@"IGC"])
+		{
+			reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%@ Posterior Thigh Perforators:\n\n#\tSeries: Image\tDistance to %@\tDistance to Midline\tVessel Diameter\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", side, refPt];
+		}
+		else if([refPt isEqualToString:@"SGC"])
+		{
+			reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%@ Gluteal Muscle Perforators:\n\n#\tSeries: Image\tDistance to %@\tDistance to Midline\tVessel Diameter\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", side, refPt];
+		}
+		else if([refPt isEqualToString:@"SSN"])
+		{
+			reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%@ TDA Perforators:\n\n#\tSeries: Image\tDistance to %@\tDistance to Midline\tVessel Diameter\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", side, refPt];
+		}
+		else if([refPt isEqualToString:@"UMB"])
+		{
+			reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%@ Abdominal Muscle Perforators:\n\n#\tSeries: Image\tDistance to %@\tDistance to Midline\tVessel Diameter\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", side, refPt];
+		}
+		
+		scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+		
+		returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+		
+		if(returnDescriptor != NULL)
+		{
+			// successful execution
+			if(kAENullEvent != [returnDescriptor descriptorType])
+			{
+				// script returned an AppleScript result
+				if(cAEList == [returnDescriptor descriptorType])
+				{
+					// result is a list of other descriptors
+				}
+				else
+				{
+					// coerce the result to the appropriate ObjC type
+				}
+			}
+		}
+		else
+		{
+			// no script result; handle error here
+		}
+		
+		[scriptObject release];
+		
+		
+		
+		for(ROIPoint *pt in roiPoints)
+		{
+			if([pt.roiID characterAtIndex:0] == [side characterAtIndex:0])
+			{
+				distToRef = pt.z3D - refPtZ;
+				
+				if(distToRef > 0)
+				{
+					locRelToRef = @"Superior";
+				}
+				else if(distToRef < 0)
+				{
+					locRelToRef = @"Inferior";
+				}
+				else
+				{
+					// even with ref pt
+					locRelToRef = [NSString stringWithFormat:@"at %@", refPt];
+				}
+                
+				// matches side of iteration
+				reportGenScript = [NSString stringWithFormat:@"set text1 to \"%@\t%d: %d\t\t\t%4.1f(%@)\t\t%4.1f\t\t\t\t%1.1f\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", pt.roiID, seriesNum, ((short)numSlices - pt.slice), fabsf(distToRef), locRelToRef, pt.distToMid, pt.diameter];
+				
+				scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+				
+				returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+				
+				if(returnDescriptor != NULL)
+				{
+					// successful execution
+					if(kAENullEvent != [returnDescriptor descriptorType])
+					{
+						// script returned an AppleScript result
+						if(cAEList == [returnDescriptor descriptorType])
+						{
+							// result is a list of other descriptors
+						}
+						else
+						{
+							// coerce the result to the appropriate ObjC type
+						}
+					}
+				}
+				else
+				{
+					// no script result; handle error here
+				}
+				
+				[scriptObject release];
+				
+			}
+			else if([pt.roiID characterAtIndex:0] == 'V')
+			{
+				// V points occur after all relevant ROIs for this table
+				break;
+			}
+			else
+			{
+				// skip reference point or opposite side of iteration
+				continue;
+			}
+			
+		}
+		
+		side = @"Right";
+	}
+	
+	// Spacing
+	reportGenScript = @"set text1 to \"\n\n\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell";
+	
+	
+	scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+    
+	returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+	
+	if(returnDescriptor != NULL)
+	{
+		// successful execution
+		if(kAENullEvent != [returnDescriptor descriptorType])
+		{
+			// script returned an AppleScript result
+			if(cAEList == [returnDescriptor descriptorType])
+			{
+				// result is a list of other descriptors
+			}
+			else
+			{
+				// coerce the result to the appropriate ObjC type
+			}
+		}
+	}
+	else
+	{
+		// no script result; handle error here
+	}
+	
+	[scriptObject release];
+	
+	////////////////////// End Perforator Distance Measurement Table ///////////////////////////////
+	
+	
+	///////////////////// Begin 3D Image Insertion //////////////////////////////
+	// 3D images only for full report
+	if([chkQuickReport state] == NSOffState)
+	{
+		NSString *filename3D = @"3d-vr"; // start with 3d-vr image
+		
+		for(i = 0; i < 2; i++)
+		{
+			// Image insertion
+			reportGenScript = [NSString stringWithFormat:@"tell application \"Finder\"\nset f to \"%@/%@.jpg\"\nset p to POSIX path of f\ntell document 1 of application \"TextEdit\"\nmake new attachment with properties {file name:p}\nactivate\nend tell\nend tell", [txtPath stringValue], filename3D];
+			
+			scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+			
+			returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+			
+			if(returnDescriptor != NULL)
+			{
+				// successful execution
+				if(kAENullEvent != [returnDescriptor descriptorType])
+				{
+					// script returned an AppleScript result
+					if(cAEList == [returnDescriptor descriptorType])
+					{
+						// result is a list of other descriptors
+					}
+					else
+					{
+						// coerce the result to the appropriate ObjC type
+					}
+				}
+			}
+			else
+			{
+				// no script result; handle error here
+			}
+			[scriptObject release];
+			
+			
+			// Spacing
+			reportGenScript = @"set text1 to \"\n\n\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell";
+			
+			
+			scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+			
+			returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+			
+			if(returnDescriptor != NULL)
+			{
+				// successful execution
+				if(kAENullEvent != [returnDescriptor descriptorType])
+				{
+					// script returned an AppleScript result
+					if(cAEList == [returnDescriptor descriptorType])
+					{
+						// result is a list of other descriptors
+					}
+					else
+					{
+						// coerce the result to the appropriate ObjC type
+					}
+				}
+			}
+			else
+			{
+				// no script result; handle error here
+			}
+			
+			[scriptObject release];
+			
+			
+			filename3D = @"3d-mip"; // update to MIP for second iteration
+		}
+	}
+	/////////////////////////// End 3D Image Insertion ////////////////////////////////////////////
+	
+	/////////////////////////////////////LOOP FOR EACH Individual ROI/////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// individual perforator image/text blocks only present in full report
+	if([chkQuickReport state] == NSOffState)
+	{
+		side = @"left";
+		
+		for(ROIPoint *pt in roiPoints)
+		{
+			if([pt.roiID isEqualToString:refPt])
+			{
+				// no image or text necessary for reference point
+				continue;
+			}
+			else if([pt.roiID characterAtIndex:0] == 'V')
+			{
+				// V-points; should occur last in sorted array (roiPoints) and on report
+				break;
+				
+			}
+			else
+			{
+				distToRef = pt.z3D - refPtZ;
+				
+				if(distToRef > 0)
+				{
+					locRelToRef = @"Superior";
+				}
+				else if(distToRef < 0)
+				{
+					locRelToRef = @"Inferior";
+				}
+				else
+				{
+					// even with ref pt
+					locRelToRef = [NSString stringWithFormat:@"at %@", refPt];
+				}
+				
+				if([pt.roiID characterAtIndex:0] == 'R')
+				{
+					side = @"right";
+				}
+				
+				//////// Individual perforator detailed section
+				
+				// just first text block
+				if ([refPt isEqualToString:@"IGC"])
+				{
+					reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%1$@ (Se%2$d, Im%3$d) is located %4$4.1fmm %5$@ to the inferior gluteal crease, %6$4.1fmm to the %7$@ of midline, and %8$4.1fmm posterior to the posterior margin of gracilis.  Vessel diameter is %9$1.1fmm. It travels %10$3.1fmm with an intramuscular course before joining the %11$@.\n\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", pt.roiID, seriesNum, ((short)numSlices - pt.slice), fabsf(distToRef), [locRelToRef lowercaseString], pt.distToMid, side, pt.distToGracilis, pt.diameter, pt.length, [pt.branchOf lowercaseString]];
+				}
+				else if([refPt isEqualToString:@"SGC"])
+				{
+					if([pt.course isEqualToString:@"Through G. Max"])
+					{
+						reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%1$@ (Se%2$d, Im%3$d) is located %4$4.1fmm %5$@ to the superior gluteal crease and %6$4.1fmm to the %7$@ of midline.  Vessel diameter is %8$1.1fmm. It travels through the gluteal maximus before joining the %9$@.\n\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", pt.roiID, seriesNum, ((short)numSlices - pt.slice), fabsf(distToRef), [locRelToRef lowercaseString], pt.distToMid, side, pt.diameter, [pt.branchOf lowercaseString]];
+					}
+					else if([pt.course isEqualToString:@"Between bundles of G. Max"])
+					{
+						reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%1$@ (Se%2$d, Im%3$d) is located %4$4.1fmm %5$@ to the superior gluteal crease and %6$4.1fmm to the %7$@ of midline.  Vessel diameter is %8$1.1fmm. It travels between the bundles of the gluteal maximus before joining the %9$@.\n\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", pt.roiID, seriesNum, ((short)numSlices - pt.slice), fabsf(distToRef), [locRelToRef lowercaseString], pt.distToMid, side, pt.diameter, [pt.branchOf lowercaseString]];
+					}
+					else if([pt.course isEqualToString:@"Between G. Max and G. Med"])
+					{
+						reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%1$@ (Se%2$d, Im%3$d) is located %4$4.1fmm %5$@ to the superior gluteal crease and %6$4.1fmm to the %7$@ of midline.  Vessel diameter is %8$1.1fmm. It travels between the gluteal maximus and gluteal medius before joining the %9$@.\n\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", pt.roiID, seriesNum, ((short)numSlices - pt.slice), fabsf(distToRef), [locRelToRef lowercaseString], pt.distToMid, side, pt.diameter, [pt.branchOf lowercaseString]];
+					}
+				}
+				else if([refPt isEqualToString:@"SSN"])
+				{
+					reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%1$@ (Se%2$d, Im%3$d) is located %4$4.1fmm %5$@ to the suprasternal notch and %6$4.1fmm to the %7$@ of midline.  Vessel diameter is %8$1.1fmm. This vessel is a branch of the %9$@.\n\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", pt.roiID, seriesNum, ((short)numSlices - pt.slice), fabsf(distToRef), [locRelToRef lowercaseString], pt.distToMid, side, pt.diameter, [pt.branchOf lowercaseString]];
+				}
+				else if([refPt isEqualToString:@"UMB"])
+				{
+					if([pt.branchOf isEqualToString:@"Deep Circumflex Iliac Artery"])
+					{
+						if ([pt.course isEqualToString:@"Indeterminate"])
+						{
+							reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%1$@ (Se%2$d, Im%3$d) is located %4$4.1fmm %5$@ to the umbilicus and %6$4.1fmm to the %7$@ of midline.  Vessel diameter is %8$1.1fmm. The course of the vessel prior to joining the %7$@ DCIA is %9$@\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", pt.roiID, seriesNum, ((short)numSlices - pt.slice), fabsf(distToRef), [locRelToRef lowercaseString], pt.distToMid, side, pt.diameter, [pt.course lowercaseString]];
+						}
+						else
+						{
+							reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%1$@ (Se%2$d, Im%3$d) is located %4$4.1fmm %5$@ to the umbilicus and %6$4.1fmm to the %7$@ of midline.  Vessel diameter is %8$1.1fmm. It travels %9$@ for %10$3.1fmm to join the %7$@ DCIA.\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", pt.roiID, seriesNum, ((short)numSlices - pt.slice), fabsf(distToRef), [locRelToRef lowercaseString], pt.distToMid, side, pt.diameter, [pt.course lowercaseString], pt.length];
+						}
+					}
+					else if([pt.branchOf isEqualToString:@"Deep Inferior Epigastric Artery"])
+					{
+						if([pt.course isEqualToString:@"Indeterminate"])
+						{
+							reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%1$@ (Se%2$d, Im%3$d) is located %4$4.1fmm %5$@ to the umbilicus and %6$4.1fmm to the %7$@ of midline.  Vessel diameter is %8$1.1fmm. The course of the vessel prior to joining the %7$@ DIEA is %9$@.\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", pt.roiID, seriesNum, ((short)numSlices - pt.slice), fabsf(distToRef), [locRelToRef lowercaseString], pt.distToMid, side, pt.diameter, [pt.course lowercaseString]];
+						}
+						else
+						{
+							reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n%1$@ (Se%2$d, Im%3$d) is located %4$4.1fmm %5$@ to the umbilicus and %6$4.1fmm to the %7$@ of midline.  Vessel diameter is %8$1.1fmm. It travels %9$@ for %10$3.1fmm to join %7$@ DIEA.\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", pt.roiID, seriesNum, ((short)numSlices - pt.slice), fabsf(distToRef), [locRelToRef lowercaseString], pt.distToMid, side, pt.diameter, [pt.course lowercaseString], pt.length];
+						}
+					}
+				}
+                
+				scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+				
+				returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+				
+				if(returnDescriptor != NULL)
+				{
+					// successful execution
+					if(kAENullEvent != [returnDescriptor descriptorType])
+					{
+						// script returned an AppleScript result
+						if(cAEList == [returnDescriptor descriptorType])
+						{
+							// result is a list of other descriptors
+						}
+						else
+						{
+							// coerce the result to the appropriate ObjC type
+						}
+					}
+				}
+				else
+				{
+					// no script result; handle error here
+				}
+				
+				[scriptObject release];
+				
+				
+				// image /////////////////////
+				reportGenScript = [NSString stringWithFormat:@"tell application \"Finder\"\nset f to \"%@/%@-crop.jpg\"\nset p to POSIX path of f\ntell document 1 of application \"TextEdit\"\nmake new attachment with properties {file name:p}\nactivate\nend tell\nend tell", [txtPath stringValue], [pt.roiID lowercaseString]];
+				
+				scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+				
+				returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+				
+				if(returnDescriptor != NULL)
+				{
+					// successful execution
+					if(kAENullEvent != [returnDescriptor descriptorType])
+					{
+						// script returned an AppleScript result
+						if(cAEList == [returnDescriptor descriptorType])
+						{
+							// result is a list of other descriptors
+						}
+						else
+						{
+							// coerce the result to the appropriate ObjC type
+						}
+					}
+				}
+				else
+				{
+					// no script result; handle error here
+				}
+				[scriptObject release];
+				
+				
+				// post-image text ///////////////////////////////
+				if ([refPt isEqualToString:@"IGC"] || [refPt isEqualToString:@"SGC"] || [refPt isEqualToString:@"SSN"])
+				{
+					// more space to try and place one text/image block per page
+					reportGenScript = @"set text1 to \"\n\n\n\n\n\n\n\n\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell";
+				}
+				else if([refPt isEqualToString:@"UMB"])
+				{
+					reportGenScript = @"set text1 to \"\n\n\n\n\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell";
+				}
+                
+				scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+				
+				returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+				
+				if(returnDescriptor != NULL)
+				{
+					// successful execution
+					if(kAENullEvent != [returnDescriptor descriptorType])
+					{
+						// script returned an AppleScript result
+						if(cAEList == [returnDescriptor descriptorType])
+						{
+							// result is a list of other descriptors
+						}
+						else
+						{
+							// coerce the result to the appropriate ObjC type
+						}
+					}
+				}
+				else
+				{
+					// no script result; handle error here
+				}
+				[scriptObject release];
+			}
+		}
+	}
+	///////////////////////////////////END LOOP FOR EACH Individual ROI///////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	////////////////////////////
+	// additional info for UMB case
+	
+	if([refPt isEqualToString:@"UMB"])
+	{
+		reportGenScript = @"set text1 to \"\nBilateral superficial inferior epigastric arteries (SIEA) are less than 1mm.\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell";
+		
+		scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+		
+		returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+		
+		if(returnDescriptor != NULL)
+		{
+			// successful execution
+			if(kAENullEvent != [returnDescriptor descriptorType])
+			{
+				// script returned an AppleScript result
+				if(cAEList == [returnDescriptor descriptorType])
+				{
+					// result is a list of other descriptors
+				}
+				else
+				{
+					// coerce the result to the appropriate ObjC type
+				}
+			}
+		}
+		else
+		{
+			// no script result; handle error here
+		}
+		[scriptObject release];
+		
+		//////
+		
+		side = @"Left";
+		float siev10 = 0.0;
+		float siev12 = 0.0;
+		
+		for(i = 0; i < 2; i++)
+		{
+			for(ROIPoint *pt in roiPoints)
+			{
+				// SIEV points have 3D x-coordinate less than reference point for left side, greater than ref pt for right side
+				
+				if([side isEqualToString:@"Left"])
+				{
+					if([pt.roiID characterAtIndex:0] == 'V' && pt.x3D > refPtX)
+					{
+						// left side V-point
+						if(siev10 == 0.0)
+						{
+							siev10 = fabsf(pt.x3D - refPtX);
+						}
+						else
+						{
+							siev12 = fabsf(pt.x3D - refPtX);
+							break;
+						}
+						
+					}
+					
+				}
+				else
+				{
+					if([pt.roiID characterAtIndex:0] == 'V' && pt.x3D < refPtX)
+					{
+						// right side V-point
+						if(siev10 == 0.0)
+						{
+							siev10 = fabsf(pt.x3D - refPtX);
+						}
+						else
+						{
+							siev12 = fabsf(pt.x3D - refPtX);
+							break;
+						}
+					}
+				}
+			}
+			
+			if([side isEqualToString:@"Left"])
+			{
+				reportGenScript = [NSString stringWithFormat:@"set text1 to \"%1$@ SIEV:\t\tAt 10cm below the umbilicus, the vessel is %2$3.1fmm to the %3$@\n\t\t\tAt 12cm below the umbilicus, the vessel is %4$3.1fmm to the %3$@\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", side, siev10, [side lowercaseString], siev12];
+			}
+			else
+			{
+				reportGenScript = [NSString stringWithFormat:@"set text1 to \"%1$@ SIEV:\tAt 10cm below the umbilicus, the vessel is %2$3.1fmm to the %3$@\n\t\t\tAt 12cm below the umbilicus, the vessel is %4$3.1fmm to the %3$@\n\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", side, siev10, [side lowercaseString], siev12];
+			}
+			
+			scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+			
+			returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+			
+			if(returnDescriptor != NULL)
+			{
+				// successful execution
+				if(kAENullEvent != [returnDescriptor descriptorType])
+				{
+					// script returned an AppleScript result
+					if(cAEList == [returnDescriptor descriptorType])
+					{
+						// result is a list of other descriptors
+					}
+					else
+					{
+						// coerce the result to the appropriate ObjC type
+					}
+				}
+			}
+			else
+			{
+				// no script result; handle error here
+			}
+			[scriptObject release];
+			
+			side = @"Right";
+			siev10 = 0.0;
+			siev12 = 0.0;
+		}
+	}
+	// end UMB additional info
+	//////////////////////////
+    
+	
+	////// fat volume
+	if ([refPt isEqualToString:@"IGC"])
+	{
+		reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n\nFat volume of a 6x22cm flap on posterior right thigh is %4.1fcc\n\nFat volume of a 6x22cm flap on posterior left thigh is %4.1fcc\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", [txtFatR floatValue], [txtFatL floatValue]];
+	}
+	else if([refPt isEqualToString:@"UMB"])
+	{
+		reportGenScript = [NSString stringWithFormat:@"set text1 to \"\n\nVolume of abdominal fat: %4.1fcc\"\ntell application \"TextEdit\"\nactivate\ntell application \"System Events\"\ntell process \"TextEdit\"\nset the clipboard to text1 & return\nkeystroke \"v\" using command down\nend tell\nend tell\nend tell", [txtFatR floatValue]];
+	}
+    
+	if([refPt isEqualToString:@"IGC"] || [refPt isEqualToString:@"UMB"])
+	{
+		scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+		
+		returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+		
+		if(returnDescriptor != NULL)
+		{
+			// successful execution
+			if(kAENullEvent != [returnDescriptor descriptorType])
+			{
+				// script returned an AppleScript result
+				if(cAEList == [returnDescriptor descriptorType])
+				{
+					// result is a list of other descriptors
+				}
+				else
+				{
+					// coerce the result to the appropriate ObjC type
+				}
+			}
+		}
+		else
+		{
+			// no script result; handle error here
+		}
+		
+		[scriptObject release];
+	}
+	////// end fat volume section
 }
 
 -(IBAction)click3DImage:(id)sender

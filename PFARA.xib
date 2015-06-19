@@ -627,10 +627,10 @@
                         <buttonCell key="cell" type="push" title="test" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1132">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
-                            <connections>
-                                <action selector="test:" target="-2" id="1134"/>
-                            </connections>
                         </buttonCell>
+                        <connections>
+                            <action selector="test:" target="-2" id="BoI-ta-rM3"/>
+                        </connections>
                     </button>
                     <button id="1194">
                         <rect key="frame" x="276" y="158" width="65" height="18"/>
@@ -783,7 +783,7 @@
                     <comboBox verticalHuggingPriority="750" id="B6J-k8-hGD">
                         <rect key="frame" x="38" y="81" width="105" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Output to" drawsBackground="YES" completes="NO" numberOfVisibleItems="2" id="esR-LW-Rhl">
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Output to" drawsBackground="YES" completes="NO" numberOfVisibleItems="2" id="esR-LW-Rhl">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
