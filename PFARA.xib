@@ -621,7 +621,7 @@
                             <action selector="clickAbout:" target="-2" id="1129"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" id="1131">
+                    <button hidden="YES" verticalHuggingPriority="750" id="1131">
                         <rect key="frame" x="157" y="257" width="96" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="test" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1132">
@@ -780,7 +780,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
-                    <comboBox verticalHuggingPriority="750" id="B6J-k8-hGD">
+                    <comboBox hidden="YES" verticalHuggingPriority="750" id="B6J-k8-hGD">
                         <rect key="frame" x="38" y="81" width="105" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Output to" drawsBackground="YES" completes="NO" numberOfVisibleItems="2" id="esR-LW-Rhl">
