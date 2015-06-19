@@ -4330,6 +4330,107 @@
 	////// end fat volume section
 }
 
+-(void)outputToWord:(short)refPtImgNum refX:(float)refPtX refZ:(float)refPtZ
+{
+    NSAlert *myAlert;
+    
+	// Applescript
+	NSDictionary* errorDict;
+	NSAppleEventDescriptor* returnDescriptor = NULL;
+	
+	NSString* reportGenScript;
+	NSAppleScript* scriptObject;
+	NSString* patientPos;
+	
+	if ([chkSupine state] == NSOnState)
+	{
+		patientPos = @"supine";
+	}
+	else
+	{
+		patientPos = @"prone";
+	}
+    
+    // Generate Text Header
+    if ([refPt isEqualToString:@"IGC"])
+	{
+        reportGenScript = [NSString stringWithFormat:@"tell application \"Microsoft Word\"\nactivate\nmake new document\ninsert text \"Perforator Flap Angiography Report (PAP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through posterior thigh muscles.\n\nTechnique: MRA of the lower extremities with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium, post Gd axial, coronal and sagittal 3D High resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBoth the Right and Left superficial femoral and profunda femoris arteries are widely patent.\n\nInferior Gluteal Crease (IGC): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\" at end of text object of active document\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, seriesNum, refPtImgNum];
+        /*
+		reportGenScript = [NSString stringWithFormat:@"tell application \"TextEdit\"\nset text of document 1 to \"Perforator Flap Angiography Report (PAP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through posterior thigh muscles.\n\nTechnique: MRA of the lower extremities with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium, post Gd axial, coronal and sagittal 3D High resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBoth the Right and Left superficial femoral and profunda femoris arteries are widely patent.\n\nInferior Gluteal Crease (IGC): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\"\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, seriesNum, refPtImgNum];
+         */
+	}
+    
+	else if([refPt isEqualToString:@"SGC"])
+	{
+        reportGenScript = [NSString stringWithFormat:@"tell application \"Microsoft Word\"\nactivate\nmake new document\ninsert text \"Perforator Flap Angiography Report (SGAP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through gluteal muscles.\n\nTechnique: MRA of the pelvis with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium (preceded by 0.5 mg glucagon to reduce peristalsis), post Gd axial, coronal and sagittal 3D High resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBoth the Right and Left superior and inferior gluteal arteries are widely patent.\n\nSuperior Gluteal Crease (SGC): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\" at end of text object of active document\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, seriesNum, refPtImgNum];
+        /*
+		reportGenScript = [NSString stringWithFormat:@"tell application \"TextEdit\"\nset text of document 1 to \"Perforator Flap Angiography Report (SGAP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through gluteal muscles.\n\nTechnique: MRA of the pelvis with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium (preceded by 0.5 mg glucagon to reduce peristalsis), post Gd axial, coronal and sagittal 3D High resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBoth the Right and Left superior and inferior gluteal arteries are widely patent.\n\nSuperior Gluteal Crease (SGC): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\"\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, seriesNum, refPtImgNum];
+         */
+	}
+    
+	else if([refPt isEqualToString:@"SSN"])
+	{
+        reportGenScript = [NSString stringWithFormat:@"tell application \"Microsoft Word\"\nactivate\nmake new document\ninsert text \"Perforator Flap Angiography Report (TDAP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate thoracodorsal artery perforators.\n\nTechnique: MRA of the chest with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ with hands above the head for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium, post Gd axial, coronal and sagittal 3D High resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBilateral internal mammary and thoracodorsal arteries are widely patent.\n\nSuprasternal Notch (SSN): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\" at end of text object of active document\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, seriesNum, refPtImgNum];
+        /*
+		reportGenScript = [NSString stringWithFormat:@"tell application \"TextEdit\"\nset text of document 1 to \"Perforator Flap Angiography Report (TDAP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate thoracodorsal artery perforators.\n\nTechnique: MRA of the chest with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ with hands above the head for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium, post Gd axial, coronal and sagittal 3D High resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBilateral internal mammary and thoracodorsal arteries are widely patent.\n\nSuprasternal Notch (SSN): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\"\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, seriesNum, refPtImgNum];
+         */
+	}
+    
+	else if([refPt isEqualToString:@"UMB"])
+	{
+		if([chkQuickReport state] == NSOnState)
+		{
+            reportGenScript = [NSString stringWithFormat:@"tell application \"Microsoft Word\"\nactivate\nmake new document\ninsert text \"Perforator Flap Angiography Report (DIEP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through abdominal muscles.\n\nTechnique: CTA of the abdomen and pelvis with and without contrast. The patient was positioned %@. 3D images were post-processed on a computer workstation.\n\nComparison: None\n\nFindings:\n\nBoth the Right and Left Inferior Epigastric Arteries are widely patent down to insertion on common femoral artery.\n\nLeft DIEA:\t\tType %d branching pattern\nRight DIEA: \tType %d branching pattern\n\nUmbilicus (UMB): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\" at end of text object of active document\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, leftDIEA, rightDIEA, seriesNum, refPtImgNum];
+            /*
+			reportGenScript = [NSString stringWithFormat:@"tell application \"TextEdit\"\nset text of document 1 to \"Perforator Flap Angiography Report (DIEP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through abdominal muscles.\n\nTechnique: CTA of the abdomen and pelvis with and without contrast. The patient was positioned %@. 3D images were post-processed on a computer workstation.\n\nComparison: None\n\nFindings:\n\nBoth the Right and Left Inferior Epigastric Arteries are widely patent down to insertion on common femoral artery.\n\nLeft DIEA:\t\tType %d branching pattern\nRight DIEA: \tType %d branching pattern\n\nUmbilicus (UMB): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\"\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, leftDIEA, rightDIEA, seriesNum, refPtImgNum];
+             */
+		}
+		else
+		{
+            reportGenScript = [NSString stringWithFormat:@"tell application \"Microsoft Word\"\nactivate\nmake new document\ninsert text \"Perforator Flap Angiography Report (DIEP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through abdominal muscles.\n\nTechnique: MRA of the abdomen with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium (preceded by 0.5 mg glucagon to reduce peristalsis), post Gd axial, coronal and sagittal 3D high resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBoth the Right and Left Inferior Epigastric Arteries are widely patent down to insertion on common femoral artery.\n\nLeft DIEA:\t\tType %d branching pattern\nRight DIEA: \tType %d branching pattern\n\nUmbilicus (UMB): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\" at end of text object of active document\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, leftDIEA, rightDIEA, seriesNum, refPtImgNum];
+            /*
+			reportGenScript = [NSString stringWithFormat:@"tell application \"TextEdit\"\nset text of document 1 to \"Perforator Flap Angiography Report (DIEP)\n\nName:\t%@\nMRN:\t%@\n\nClinical History: Undergoing breast reconstruction. Evaluate perforating arteries through abdominal muscles.\n\nTechnique: MRA of the abdomen with and without contrast was performed at 1.5 Tesla using body array coil. The patient was positioned %@ for the following sequences: axial and coronal single shot fast spin echo, axial 3D LAVA pre during post dynamic injection of 10 ml gadofosveset trisodium (preceded by 0.5 mg glucagon to reduce peristalsis), post Gd axial, coronal and sagittal 3D high resolution LAVA. 3D images were post-processed on a computer workstation.\n\nBoth the Right and Left Inferior Epigastric Arteries are widely patent down to insertion on common femoral artery.\n\nLeft DIEA:\t\tType %d branching pattern\nRight DIEA: \tType %d branching pattern\n\nUmbilicus (UMB): Se%i, Im%i\n\nNote: All measurements are in mm.\n\n\"\nend tell", [txtName stringValue], [txtMRN stringValue], patientPos, leftDIEA, rightDIEA, seriesNum, refPtImgNum];
+             */
+		}
+	}
+	else
+	{
+		//unknown reference point!
+		//refPtText = @"UNKNOWN REFERENCE POINT!";
+        reportGenScript = @"";
+	}
+	
+	scriptObject = [[NSAppleScript alloc] initWithSource:reportGenScript];
+	
+	returnDescriptor = [scriptObject executeAndReturnError:&errorDict];
+	
+	if(returnDescriptor != NULL)
+	{
+		// successful execution
+		if(kAENullEvent != [returnDescriptor descriptorType])
+		{
+			// script returned an AppleScript result
+			if(cAEList == [returnDescriptor descriptorType])
+			{
+				// result is a list of other descriptors
+			}
+			else
+			{
+				// coerce the result to the appropriate ObjC type
+			}
+		}
+	}
+	else
+	{
+		// no script result; handle error here
+	}
+	
+	[scriptObject release];
+    
+    
+    
+}
+
 -(IBAction)click3DImage:(id)sender
 {
 	[self toggle3DImage];
