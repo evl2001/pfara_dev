@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2F51741BF55C4B0060ED64 /* PFARAFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA48A660680BB690089EB4F /* PFARAFilter.m */; };
 		442531201917E70A00CEE9D5 /* DCMAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 4425311D1917E70A00CEE9D5 /* DCMAttribute.h */; };
 		442531211917E70A00CEE9D5 /* DCMAttributeTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 4425311E1917E70A00CEE9D5 /* DCMAttributeTag.h */; };
 		442531221917E70A00CEE9D5 /* DCMObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4425311F1917E70A00CEE9D5 /* DCMObject.h */; };
@@ -18,7 +19,6 @@
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		ABA48A650680BB600089EB4F /* PFARAFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA48A640680BB600089EB4F /* PFARAFilter.h */; };
-		ABA48A670680BB690089EB4F /* PFARAFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA48A660680BB690089EB4F /* PFARAFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -241,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABA48A670680BB690089EB4F /* PFARAFilter.m in Sources */,
+				0A2F51741BF55C4B0060ED64 /* PFARAFilter.m in Sources */,
 				4437A3A918EDDABB003BA668 /* ROIPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +292,7 @@
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = PFARA;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -332,7 +332,7 @@
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = PFARA;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
