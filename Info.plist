@@ -20,7 +20,7 @@
 	<string>PFARAFilter</string>
 	<key>MenuTitles</key>
 	<array>
-		<string>PFARA</string>
+		<string>PFARABeta</string>
 	</array>
 	<key>pluginType</key>
 	<string>other</string>

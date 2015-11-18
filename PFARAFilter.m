@@ -2310,11 +2310,13 @@
 
 -(void)quitPreview
 {
-	sleep(1);
-	// Quit 'Preview' automatically
-	NSDictionary* errorDict;
-	NSAppleScript* appleScript = [[NSAppleScript alloc] initWithSource:@"tell application \"Preview\"\nquit\nend tell"];
-	[appleScript executeAndReturnError: &errorDict];
+    NSLog(@"Quit Preview Called!");
+
+//	sleep(1);
+//	// Quit 'Preview' automatically
+//	NSDictionary* errorDict;
+//	NSAppleScript* appleScript = [[NSAppleScript alloc] initWithSource:@"tell application \"Preview\"\nquit\nend tell"];
+//	[appleScript executeAndReturnError: &errorDict];
 }
 
 -(void)quitTextEdit
@@ -6010,14 +6012,17 @@
 
 -(IBAction)clickNextPage:(id)sender
 {
+    
+    NSLog(@"*****************In Click Next Page*****************");
 	switch (interfaceIndex)
 	{
 		// cases based on visible page when button is clicked
 		case 1:
 			
 			// get ROI points (replaces 'Get ROIs' button from before)
-			if(![self getPoints])
-			{					
+			if(refPt == nil || ![self getPoints])
+			{
+                NSLog(@"Doing Nothing");
 				return;
 			}
 			
@@ -6042,6 +6047,8 @@
 			
 			if([chkQuickReport state] == NSOffState)
 			{
+                NSLog(@"QuickReport State is OffState");
+                NSLog([NSString stringWithFormat:@"Point is %@" , refPt]);
 				if ([refPt isEqualToString:@"IGC"] || [refPt isEqualToString:@"UMB"])
 				{
 					[lblLength setHidden:NO];
