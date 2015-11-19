@@ -1,5 +1,5 @@
 //
-//  PFARAFilter.h
+//  PFARABetaFilter.h
 //  PFARA
 //
 //  Copyright (c) 2014 Weill Cornell Medical College. All rights reserved.
@@ -12,7 +12,7 @@
 #import "Osirix Headers/DCMAttributeTag.h"
 #include <math.h>
 
-@interface PFARAFilter : PluginFilter {
+@interface PFARABetaFilter : PluginFilter {
 
 	IBOutlet NSButton		*btnTest;
 	

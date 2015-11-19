@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A2F51741BF55C4B0060ED64 /* PFARAFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA48A660680BB690089EB4F /* PFARAFilter.m */; };
+		0A2F51741BF55C4B0060ED64 /* PFARABetaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA48A660680BB690089EB4F /* PFARABetaFilter.m */; };
 		442531201917E70A00CEE9D5 /* DCMAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 4425311D1917E70A00CEE9D5 /* DCMAttribute.h */; };
 		442531211917E70A00CEE9D5 /* DCMAttributeTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 4425311E1917E70A00CEE9D5 /* DCMAttributeTag.h */; };
 		442531221917E70A00CEE9D5 /* DCMObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4425311F1917E70A00CEE9D5 /* DCMObject.h */; };
@@ -18,7 +18,7 @@
 		8D5B49AE048680CD000E48DA /* PFARA_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF630370AF2F00C91783 /* PFARA_Prefix.pch */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
-		ABA48A650680BB600089EB4F /* PFARAFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA48A640680BB600089EB4F /* PFARAFilter.h */; };
+		ABA48A650680BB600089EB4F /* PFARABetaFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA48A640680BB600089EB4F /* PFARABetaFilter.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +36,8 @@
 		8420023112E829A200E1E9CE /* OsiriXAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OsiriXAPI.framework; sourceTree = "<group>"; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB5D36050680E57E00F4007A /* PFARA.osirixplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PFARA.osirixplugin; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABA48A640680BB600089EB4F /* PFARAFilter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PFARAFilter.h; sourceTree = "<group>"; };
-		ABA48A660680BB690089EB4F /* PFARAFilter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PFARAFilter.m; sourceTree = "<group>"; };
+		ABA48A640680BB600089EB4F /* PFARABetaFilter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PFARABetaFilter.h; sourceTree = "<group>"; };
+		ABA48A660680BB690089EB4F /* PFARABetaFilter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PFARABetaFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +140,8 @@
 		AB2C26750677B0C400A08910 /* ROILabelerFilter */ = {
 			isa = PBXGroup;
 			children = (
-				ABA48A640680BB600089EB4F /* PFARAFilter.h */,
-				ABA48A660680BB690089EB4F /* PFARAFilter.m */,
+				ABA48A640680BB600089EB4F /* PFARABetaFilter.h */,
+				ABA48A660680BB690089EB4F /* PFARABetaFilter.m */,
 				4437A3A618EDDABB003BA668 /* ROIPoint.h */,
 				4437A3A718EDDABB003BA668 /* ROIPoint.m */,
 			);
@@ -156,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49AE048680CD000E48DA /* PFARA_Prefix.pch in Headers */,
-				ABA48A650680BB600089EB4F /* PFARAFilter.h in Headers */,
+				ABA48A650680BB600089EB4F /* PFARABetaFilter.h in Headers */,
 				4437A3A818EDDABB003BA668 /* ROIPoint.h in Headers */,
 				442531201917E70A00CEE9D5 /* DCMAttribute.h in Headers */,
 				442531211917E70A00CEE9D5 /* DCMAttributeTag.h in Headers */,
@@ -241,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A2F51741BF55C4B0060ED64 /* PFARAFilter.m in Sources */,
+				0A2F51741BF55C4B0060ED64 /* PFARABetaFilter.m in Sources */,
 				4437A3A918EDDABB003BA668 /* ROIPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +263,7 @@
 		CE6A9A9108AC841300D0C1EE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
@@ -307,6 +308,7 @@
 		CE6A9A9208AC841300D0C1EE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (

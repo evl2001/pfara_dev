@@ -5,10 +5,10 @@
 //  Copyright (c) 2014 Weill Cornell Medical College. All rights reserved.
 //
 
-#import "PFARAFilter.h"
+#import "PFARABetaFilter.h"
 #import "ROIPoint.h"
 
-@implementation PFARAFilter
+@implementation PFARABetaFilter
 
 - (void) initPlugin
 {
@@ -31,6 +31,13 @@
 {
 	[NSBundle loadNibNamed:@"PFARA" owner:self];
 	
+    NSAlert *bugFixAlert = [NSAlert alertWithMessageText:@"Beta Plugin: In development"
+                                           defaultButton:@"OK"
+                                         alternateButton:nil
+                                             otherButton:nil
+                               informativeTextWithFormat:@""];
+    [bugFixAlert runModal];
+    
 	roiPoints = [[NSMutableArray alloc] init];
 	leftDIEA = 0;
 	rightDIEA = 0;
@@ -6014,6 +6021,7 @@
 {
     
     NSLog(@"*****************In Click Next Page*****************");
+
 	switch (interfaceIndex)
 	{
 		// cases based on visible page when button is clicked
