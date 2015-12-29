@@ -1971,7 +1971,7 @@
  
 -(void) saveCrop
 {	
-	sleep(1);
+    sleep(5);
 	
 	if(![self fullImgExists:[txtROI stringValue]])
 	{
@@ -1981,7 +1981,7 @@
 								alternateButton:nil
 									otherButton:nil
 					  informativeTextWithFormat:@"Please set the default directory for file export within OsiriX."];
-		[myAlert runModal];
+		[myAlert performSelectorOnMainThread:@selector(runModal) withObject:nil waitUntilDone:NO]; //[myAlert runModal];
 		return;
 	}
 	
@@ -2035,7 +2035,7 @@
 								alternateButton:nil
 									otherButton:nil
 					  informativeTextWithFormat:@"Please draw a rectangular ROI"];
-		[myAlert runModal];
+		[myAlert performSelectorOnMainThread:@selector(runModal) withObject:nil waitUntilDone:NO]; //[myAlert runModal];
 		return;
 	}
 	
@@ -2075,7 +2075,7 @@
 								alternateButton:nil
 									otherButton:nil
 					  informativeTextWithFormat:@""];
-		[myAlert runModal];
+		[myAlert performSelectorOnMainThread:@selector(runModal) withObject:nil waitUntilDone:NO]; //[myAlert runModal];
 		return;
 	}
 	
@@ -6021,7 +6021,10 @@
 {
     
     NSLog(@"*****************In Click Next Page*****************");
-
+    
+    NSAlert *myAlert;
+    
+    
 	switch (interfaceIndex)
 	{
 		// cases based on visible page when button is clicked
@@ -6030,7 +6033,16 @@
 			// get ROI points (replaces 'Get ROIs' button from before)
 			if(refPt == nil || ![self getPoints])
 			{
+                
                 NSLog(@"Doing Nothing");
+                myAlert = [NSAlert alertWithMessageText:@"Doing Nothing"
+                                          defaultButton:@"Close"
+                                        alternateButton:nil
+                                            otherButton:nil
+                              informativeTextWithFormat:@"Nothing at all"];
+                
+                [myAlert runModal];
+
 				return;
 			}
 			
