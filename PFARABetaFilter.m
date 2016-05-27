@@ -1,4 +1,4 @@
-//
+    //
 //  PFARAFilter.m
 //  PFARA
 //
@@ -31,11 +31,11 @@
 {
 	[NSBundle loadNibNamed:@"PFARA" owner:self];
 	
-    NSAlert *bugFixAlert = [NSAlert alertWithMessageText:@"Beta Plugin: In development"
+    NSAlert *bugFixAlert = [NSAlert alertWithMessageText:@"Beta Plugin 1.21: In development"
                                            defaultButton:@"OK"
                                          alternateButton:nil
                                              otherButton:nil
-                               informativeTextWithFormat:@""];
+                               informativeTextWithFormat:@"pfaraBugFixes released Feb 3 2016"];
     [bugFixAlert runModal];
     
 	roiPoints = [[NSMutableArray alloc] init];
@@ -207,6 +207,8 @@
 
 - (IBAction)clickRefROI: (id)sender
 {
+    
+    NSLog(@"clickRefROI called");
 	NSString *msg;
 	NSAlert *myAlert;
 	
@@ -242,9 +244,10 @@
 			if([[roi name] isEqualToString:@"IGC"] || [[roi name] isEqualToString:@"SGC"] || [[roi name] isEqualToString:@"SSN"] || [[roi name] isEqualToString:@"UMB"])
 			{
 				refPtFound = YES;
-				[roi setName:[cboRefPt stringValue]];
+                refPt = [roi name];
+                NSLog(@"refPtFound already labeled, %@", refPt);
+				[roi setName:[cboRefPt stringValue]]; //Why do this again? Change the choice of ROI landmark?
 				[btnPPoints setEnabled:YES];
-				
 				break;
 			}
 		}
@@ -252,6 +255,7 @@
 	
 	if(!refPtFound)
 	{
+        NSLog(@"No reference point already defined");
 		// no reference point already defined
 		for(i = 0; i < seriesROIs; i++)
 		{
@@ -280,6 +284,7 @@
 					refPtFound = YES;
 					
 					[roi setName:[cboRefPt stringValue]];
+                    refPt = [roi name];
 					[btnPPoints setEnabled:YES];
 				}
 			}
@@ -651,6 +656,8 @@
 
 -(BOOL)getPoints
 {
+    NSLog(@"Performing selector getPoints");
+    
 	NSString *msg;
 	NSAlert *myAlert;
 	
@@ -660,16 +667,30 @@
 	short shROISeries;
 	
 	pixList       = [viewerController pixList];	
-	thisPix       = [pixList objectAtIndex: 0];
-	
+    NSLog(@"pixList acquired");
+    
+    
+    
+    thisPix       = [pixList objectAtIndex: 0];
+    NSLog(@"thisPix acquired");
+    
+    
 	roiSeriesList = [viewerController roiList];
+    NSLog(@"roiSeriesList acquired");
+    
 	shROISeries   = [roiSeriesList count];
+    NSLog([NSString stringWithFormat:@"shROISeries %d", shROISeries]);
+           
 	numSlices = (float)[roiSeriesList count];
+    NSLog([NSString stringWithFormat:@"numSlices %f", numSlices]);
 	
+    
+    
 	NSPoint curPoint;
 	
 	[roiPoints removeAllObjects];
-	
+	NSLog(@"removeAllObjects");
+           
 	for(i = 0; i < shROISeries; i++)
 	{
 		thisPix      = [pixList       objectAtIndex: i];
@@ -714,7 +735,8 @@
 				
 				// add point to array in memory
 				curPoint = [roi centroid];
-				
+                NSLog(@"curPoint added to array in memory");
+                
 				[[[viewerController imageView] curDCM] convertPixX:(float)curPoint.x pixY:(float)curPoint.y toDICOMCoords:(float *)dcmCoords];
 								
 				ROIPoint* pt = [[ROIPoint alloc] init];
@@ -760,7 +782,8 @@
 			}
 					
 		}
-	}	
+	}
+    NSLog(@"Cleanly exited loop adding points to array");
 	
 	float refPtX; // x-coordinate of the reference point
 	float refPtZ; // z-coordinate of the reference point
@@ -781,6 +804,7 @@
 		// set distToMid for each ROI if not defined; this is straight linear distance in the x-direction from perforator to reference point
 		// distToMid is updated for gluteal case during the save crop process
 		pt.distToMid = fabsf(pt.x3D - refPtX);
+        NSLog(@"Updated distance to mid");
 	}
 		
 	// sort roiPoints
@@ -798,9 +822,13 @@
 	NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDesc1, sortDesc2, sortDesc3, nil];
 	
 	[roiPoints sortUsingDescriptors:sortDescriptors];
+    NSLog(@"Sorted roiPoints Using descriptors");
 	
 	// clear perforator dropdown list
 	[cboPerforators removeAllItems];
+    NSLog(@"clearing perforator dropdown list");
+    
+    NSLog(@"refPt stored as %@", refPt);
 	
 	// update distToMid and validate perforator locations
 	for(ROIPoint *pt in roiPoints)
@@ -848,6 +876,7 @@
 			}
 			else if([refPt isEqualToString:@"UMB"])
 			{
+                NSLog(@"Reference point is Umbilicus, testing if perforator points within boundaries");
 				if((refPtZ < pt.z3D) && ((pt.z3D - refPtZ) > 30.))
 				{
 					// Perforator is more than 3cm above the UMB
@@ -921,6 +950,7 @@
 		}
 		else if([refPt isEqualToString:@"UMB"])
 		{
+            NSLog(@"Update GUI cboBrancOf choicebox");
 			[cboBranchOf addItemWithObjectValue:@"Deep Inferior Epigastric Artery"];
 			[cboBranchOf addItemWithObjectValue:@"Deep Circumflex Iliac Artery"];
 		}
@@ -934,6 +964,7 @@
 	}
 	else if([refPt isEqualToString:@"UMB"])
 	{
+        NSLog(@"Update GUI cboCourse choicebox");
 		[cboCourse addItemWithObjectValue:@"Medial Oblique Inferior"];
 		[cboCourse addItemWithObjectValue:@"Lateral Oblique Inferior"];
 		[cboCourse addItemWithObjectValue:@"Superior"];
@@ -944,17 +975,20 @@
 	}
 	
 	// reset perforator in plugin to the first one (typically L1)
+    NSLog(@"Reset perforator in plugin to the first one");
 	[txtROI setStringValue:pt.roiID];
 	[btnPrevROI setEnabled:NO];
 	[btnNextROI setEnabled:YES];
 	
 	// set image to first perforator
+    NSLog(@"Set image to first perforator");
 	[viewerController setImageIndex:((int)numSlices - pt.slice - 1)];
 	
 	// round to tenth decimal place for diameter and length
+    NSLog(@"Round to tenth decimal place for diameter and length");
 	NSString* diamRounded = [NSString stringWithFormat:@"%.1f", pt.diameter];
 	[cboDiameter setStringValue:diamRounded];
-
+    
 	NSString* lenRounded = [NSString stringWithFormat:@"%.1f", pt.length];
 	[txtLength setStringValue:lenRounded];
 	
@@ -963,11 +997,13 @@
 	
 	
 	// load any saved global attributes
+    NSLog(@"Load any saved global attributes");
 	NSString* globalAttrPath;
 	NSString* globalAttr;
 	NSArray* substrings;
 	
 	// load Fat values
+    NSLog(@"Load fat values");
 	globalAttrPath = [NSString stringWithFormat:@"%@/archive/fat.vals", [txtPath stringValue]];
 	
 	if([[NSFileManager defaultManager] fileExistsAtPath:globalAttrPath])
@@ -975,6 +1011,7 @@
 		globalAttr = [NSString stringWithContentsOfFile:globalAttrPath encoding:NSUTF8StringEncoding error:nil];
 		
 		// parse with "," delimiter
+        NSLog(@"parse with comma delimiter");
 		substrings = [globalAttr componentsSeparatedByString:@","];
 		
 		if([[substrings objectAtIndex:0] floatValue] != 0.0)
@@ -991,6 +1028,7 @@
 	}
 	
 	// load DIEA values
+    NSLog(@"load DIEA values");
 	globalAttrPath = [NSString stringWithFormat:@"%@/archive/diea.vals", [txtPath stringValue]];
 	
 	if([[NSFileManager defaultManager] fileExistsAtPath:globalAttrPath])
@@ -1014,10 +1052,13 @@
 	}
 	
 	[chkProjToSkin setEnabled:YES];
-	
+    NSLog(@"Setting chkProjToSkin enabled");
+    
 	// populate the ROI summary table
+    NSLog(@"populate ROI summary table");
 	[self refreshTable];
 	
+    NSLog(@"Return getPoints TRUE/YES");
 	return YES;
 }
 
@@ -6021,6 +6062,7 @@
 {
     
     NSLog(@"*****************In Click Next Page*****************");
+    NSLog([NSString stringWithFormat:@"Value of interfaceIndex is %hd" , interfaceIndex]);
     
     NSAlert *myAlert;
     
@@ -6029,7 +6071,7 @@
 	{
 		// cases based on visible page when button is clicked
 		case 1:
-			
+            NSLog(@"Running case 1");
 			// get ROI points (replaces 'Get ROIs' button from before)
 			if(refPt == nil || ![self getPoints])
 			{
@@ -6119,7 +6161,15 @@
 				[txtRightDIEA setHidden:NO];
 			}
 			*/
-			 
+			
+            myAlert = [NSAlert alertWithMessageText:@"Step 0: Please save ROIs to project folder before proceeding."
+                                      defaultButton:@"OK"
+                                    alternateButton:nil
+                                        otherButton:nil
+                          informativeTextWithFormat:@"Recommended procedure: Step 1: Mark all perforator courses; Step 2: Save image crops"];
+            
+            [myAlert runModal];
+            
 			[btnPrevPage setEnabled:YES];
 			
 			break;
